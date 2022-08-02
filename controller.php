@@ -125,8 +125,9 @@ foreach($klice as $polozka=>$hodnota)
   {
   list($alo,$jednotka)=$hodnota;
   $raw_data=get_data($ip_tristar,$alo);
-  echo $polozka . ":" . get_scaled_value($raw_data,$jednotka,$vscale,$iscale).$jednotka."<br>";
+  echo "<div>" . $polozka . ":" . get_scaled_value($raw_data,$jednotka,$vscale,$iscale).$jednotka."</div>";
   }
+
 
 ?>
 
